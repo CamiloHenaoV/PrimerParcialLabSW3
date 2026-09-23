@@ -1,10 +1,10 @@
 let inventario = [
-  { id: 1, nombre: "Camiseta", precio: 35000, stock: 10 },
-  { id: 2, nombre: "Pantalón", precio: 60000, stock: 8 },
-  { id: 3, nombre: "Zapatos", precio: 120000, stock: 5 },
-  { id: 4, nombre: "Chaqueta", precio: 95000, stock: 6 },
-  { id: 5, nombre: "Gorra", precio: 20000, stock: 15 },
-  { id: 6, nombre: "Medias", precio: 8000, stock: 20 }
+  { id: 1, nombre: "Camiseta", precio: 35000, stock: 10, imagen: "images/camiseta.png" },
+  { id: 2, nombre: "Pantalón", precio: 60000, stock: 8, imagen: "images/pantalon.png" },
+  { id: 3, nombre: "Zapatos", precio: 120000, stock: 5, imagen: "images/zapatos.png" },
+  { id: 4, nombre: "Chaqueta", precio: 95000, stock: 6, imagen: "images/chaqueta.png" },
+  { id: 5, nombre: "Gorra", precio: 20000, stock: 15, imagen: "images/gorra.png" },
+  { id: 6, nombre: "Medias", precio: 8000, stock: 20, imagen: "images/medias.png" }
 ];
 
 let carrito = [];
@@ -22,6 +22,10 @@ function renderCatalogo(lista) {
     const tarjeta = document.createElement("div");
     tarjeta.classList.add("tarjeta");
 
+    const imagen = document.createElement("img");
+    imagen.src = producto.imagen;
+    imagen.alt = producto.nombre;
+
     const titulo = document.createElement("h3");
     titulo.textContent = producto.nombre;
 
@@ -36,6 +40,7 @@ function renderCatalogo(lista) {
     boton.disabled = producto.stock <= 0;
     boton.addEventListener("click", () => agregarAlCarrito(producto.id));
 
+    tarjeta.appendChild(imagen);
     tarjeta.appendChild(titulo);
     tarjeta.appendChild(precio);
     tarjeta.appendChild(stock);
