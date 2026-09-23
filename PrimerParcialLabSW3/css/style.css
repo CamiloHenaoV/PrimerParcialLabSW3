@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f6;
+  color: #222;
+}
+
+.navbar {
+  background: #1f2937;
+  padding: 14px 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #93c5fd;
+}
+
+.contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+#buscador {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.tarjeta {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.tarjeta h3 {
+  margin: 8px 0 4px;
+}
+
+.tarjeta button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tarjeta button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.carrito-panel {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 20px 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+#listaCarrito {
+  list-style: none;
+  padding: 0;
+}
+
+#listaCarrito li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#btnVaciar {
+  padding: 10px 16px;
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cv ul {
+  padding-left: 20px;
+}
