@@ -1,10 +1,10 @@
 let inventario = [
-  { id: 1, nombre: "Camiseta", precio: 35000, stock: 10, imagen: "images/camiseta.png" },
-  { id: 2, nombre: "Pantalón", precio: 60000, stock: 8, imagen: "images/pantalon.png" },
-  { id: 3, nombre: "Zapatos", precio: 120000, stock: 5, imagen: "images/zapatos.png" },
-  { id: 4, nombre: "Chaqueta", precio: 95000, stock: 6, imagen: "images/chaqueta.png" },
-  { id: 5, nombre: "Gorra", precio: 20000, stock: 15, imagen: "images/gorra.png" },
-  { id: 6, nombre: "Medias", precio: 8000, stock: 20, imagen: "images/medias.png" }
+  { id: 1, nombre: "Camiseta", precio: 35000, stock: 10, imagen: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" },
+  { id: 2, nombre: "Pantalón", precio: 60000, stock: 8, imagen: "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=80" },
+  { id: 3, nombre: "Zapatos", precio: 120000, stock: 5, imagen: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" },
+  { id: 4, nombre: "Chaqueta", precio: 95000, stock: 6, imagen: "https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=80" },
+  { id: 5, nombre: "Gorra", precio: 20000, stock: 15, imagen: "https://www.nicepng.com/png/detail/941-9417557_gorra-png-gorras-totto.png" },
+  { id: 6, nombre: "Medias", precio: 8000, stock: 20, imagen: "https://static.vecteezy.com/system/resources/thumbnails/056/485/474/small/pair-of-white-sock-png.png" }
 ];
 
 let carrito = [];
